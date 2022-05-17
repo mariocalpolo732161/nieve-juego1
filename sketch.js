@@ -47,26 +47,26 @@ function setup()
   engine = Engine.create();
   world = engine.world;
   butlon = createImg("cut_button.png")
-  butlon.position(220,50);
-  butlon.size(45,45);
+  butlon.position(85,50);
+  butlon.size(55,55);
   butlon.mouseClicked(drop);
   shhhhh=createImg("mute.png");
-  shhhhh.position(430,20);
+  shhhhh.position(240,20);
   shhhhh.size(50,50);
   shhhhh.mouseClicked(mute);
   ground = new Ground(200,680,600,20);
-nieve= createSprite(400,600,101,101);
+nieve= createSprite(310,600,101,101);
 nieve.addImage(rabbit);
 nieve.scale=0.2
 
 globo=createImg("balloon.png")
 //>_<
-globo.position(10,280);
+globo.position(-29,280);
 globo.size(150,100);
 globo.mouseClicked(airBlow)
 
-  rope = new Rope(7,{x:245,y:30});
-  fruit = Bodies.circle(300,300,20);
+  rope = new Rope(7,{x:105,y:30});
+  fruit = Bodies.circle(200,300,20);
   Matter.Composite.add(rope.body,fruit);
 
   norman1.frameDelay=20;
